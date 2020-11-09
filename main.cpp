@@ -22,14 +22,14 @@ int main() {
 		return 0;
 	}
 	int parameter;
-	int r = 21474836;
+	int r = 2147483647;
 	double round = 0;
 	for (int i = 0; i < r; i++) {
 		if (i % 100000 == 0) {
 			system("cls");
 			round += 1000000;
 			cout << "By - Patryk Januszewski"						<< endl;
-			cout << "Utworzono: " << i << " z 21474836"			<< endl;
+			cout << "Utworzono: " << i << " z 2147483647"			<< endl;
 			color_green();
 			progress_bar_extended(ceil(droga(i)));
 			color_reset();
@@ -43,5 +43,5 @@ int main() {
 }
 int droga(int i) {
 	float n = i;
-	return (ceil((n / 21474836) * 100));
+	return (ceil((n / 2147483647) * 100));
 }
